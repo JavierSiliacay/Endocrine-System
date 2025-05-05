@@ -1,0 +1,30 @@
+Project Workflow: LED & Buzzer Monitoring System
+
+1. System Startup
+The system initializes all the necessary components, including the LEDs, buzzer, button, and potentiometer. It sets the initial states and begins serial communication for monitoring.
+
+2. Button Handling
+The button is used to toggle between two modes of operation: Normal Mode and Abnormal Mode.
+
+NORMAL MODE
+
+Potentiometer Reading
+The system reads the analog input from the potentiometer and maps the value from 0–1023 to 0–255. This mapped value controls the LED brightness and various conditions in the system.
+
+Green LED Blinking
+The green LED blinks at a speed based on the potentiometer value. If the value is 700 or below, it blinks at a normal rate. If the value is above 700, the blinking speed increases (shorter delays).
+
+Yellow LEDs Cycling
+The three yellow LEDs cycle every 700 milliseconds. Only one yellow LED is active at a time, and its brightness depends on the potentiometer’s value. The system divides the brightness into low, medium, and high ranges.
+
+Red LED and Buzzer Conditions
+If the mapped potentiometer value reaches the maximum (255), the red LED turns on and the buzzer activates at 3500 Hz to signal a warning.
+If the mapped value is 0, the red LED turns off, the buzzer stops, and all yellow LEDs are turned off to reset the system state.
+
+ABNORMALITY MODE
+
+All Alerts Activated
+In abnormal mode, all indicators are turned on. The green, red, and all three yellow LEDs are fully lit. The buzzer produces a continuous sound at 4000 Hz to indicate a critical or emergency state.
+
+Mode Reset / Toggle
+Pressing the button again switches the system back and forth between Normal Mode and Abnormal Mode, depending on the current state.
