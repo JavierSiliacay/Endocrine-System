@@ -1,6 +1,6 @@
 /*
   ------------------------------------------------------------------------------
-  © 2025 Javier Siliacay | USTP - All Rights Reserved.
+  © 2025 Javier Siliacay | USTP Autotronics - All Rights Reserved.
 
   This source code is the intellectual property of the author and is provided 
   for educational and non-commercial use only. Unauthorized copying, modification, 
@@ -10,10 +10,9 @@
   Violation of these terms may result in legal action under applicable intellectual 
   property laws.
 
-  For permissions, contact: siliacay.javier@ustp.edu.ph
+  For permissions, contact: github.com/javiersiliacay
   ------------------------------------------------------------------------------
 */
-
 
 // Pin Definitions
 const int greenLed   = 9;  // PWM
